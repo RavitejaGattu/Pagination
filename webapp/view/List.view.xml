@@ -1,0 +1,29 @@
+<mvc:View 
+    controllerName="sap.btp.sapui5.controller.List"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <subHeader>
+            <Bar>
+                <contentLeft>
+                    <SearchField search="handleSearch"/>
+                </contentLeft>
+                <contentRight>
+                    <Button text="Reload" press="onReload"/>
+                </contentRight>
+            </Bar>    
+        </subHeader>
+        <content>
+            <List items="{NorthwindModel>/}" >
+                <StandardListItem title="{NorthwindModel>ProductName}" type="Navigation" press="handleListItemPress"/>
+            </List>
+            <FlexBox justifyContent="End" >
+                <items>
+                    <Button id="idPrevious" icon="sap-icon://slim-arrow-left" press="onPrevious"/>
+                    <Button id="idNext" icon="sap-icon://slim-arrow-right" press="onNext" />
+                </items>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

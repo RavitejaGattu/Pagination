@@ -1,0 +1,16 @@
+<mvc:View 
+    controllerName="sap.btp.sapui5.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Page id="detail" title="{i18n>title}" showNavButton="true" navButtonPress="handleNavButtonPress">
+        <content>
+            <VBox>
+                <Text text="{NorthwindModel>ProductName}" />
+                <Text text="{NorthwindModel>UnitPrice}" />
+                <Text text="{NorthwindModel>QuantityPerUnit}" />
+                <Text text="{NorthwindModel>UnitsInStock}" />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
