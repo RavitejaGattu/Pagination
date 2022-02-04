@@ -14,9 +14,6 @@ server:
           - path: /V2
             url: https://services.odata.org
             destination: Northwind
-          - path: /v2
-            url: https://8dea85e5trial-dev-bookshop-srv.cfapps.us10.hana.ondemand.com
-            destination: Capm
         ui5:
           path:
             - /resources
